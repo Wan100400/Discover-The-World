@@ -1,0 +1,20 @@
+{
+  "name": "world-explorer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^33.0.2"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "electron-store": "^8.1.0"
+  }
+}

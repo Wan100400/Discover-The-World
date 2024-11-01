@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Navigation Styling */
+nav {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0069d9;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+/* Section Styling */
+section {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 15px;
+    padding: 25px;
+    width: 45%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+section:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+#country-list,
+#itinerary-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Country Item Styling */
+.country-item {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #dee2e6;
+}
+
+.country-item:hover {
+    background-color: #f4f7fa;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.country-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.country-flag {
+    width: 70px;
+    height: 45px;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+}
+
+.country-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #343a40;
+    flex: 1;
+}
+
+/* Button Styling */
+button {
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:focus {
+    outline: 2px solid #0056b3;
+}
+
+.add-itinerary {
+    background-color: #28a745;
+}
+
+.add-itinerary:hover {
+    background-color: #218838;
+}
+
+.toggle-details {
+    background-color: #17a2b8;
+}
+
+.toggle-details:hover {
+    background-color: #138496;
+}
+
+/* Country Details Styling */
+.country-details {
+    display: none;
+    padding: 15px;
+    margin-top: 10px;
+    border-top: 1px solid #dee2e6;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    color: #495057;
+}
+
+.country-details p {
+    margin: 8px 0;
+    font-size: 1em;
+}
+
+.country-details h4 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #007bff;
+}
+
+.country-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.country-details a:hover {
+    text-decoration: underline;
+}
+
+#search-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
+/* Itinerary Section Styling */
+#itinerary-section {
+    background-color: #e9f5f5;
+}
+
+/* Container styling for itinerary item */
+#itinerary-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #e9f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin: auto;
+}
+
+/* Flag styling */
+.country-flag {
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Country name styling */
+.country-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Button styling */
+button {
+    padding: 8px 12px;
+    color: #ffffff;
+    font-size: 0.9em;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+/* Different button colors */
+button.details {
+    background-color: #17a2b8;
+}
+
+button.details:hover {
+    background-color: #138496;
+}
+
+button.remove {
+    background-color: #dc3545;
+}
+
+button.remove:hover {
+    background-color: #c82333;
+}
+
+button.save-file {
+    background-color: #28a745;
+    margin-left: 10px;
+}
+
+button.save-file:hover {
+    background-color: #218838;
+}
+
+/* Input styling */
+input[type="text"] {
+    padding: 8px;
+    font-size: 0.9em;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    margin-left: 5px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    #itinerary-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    button, input[type="text"] {
+        width: 100%;
+        margin-top: 8px;
+    }
+}
+.coat-of-arms {
+    width: 150px;
+}
